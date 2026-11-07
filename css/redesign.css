@@ -1,0 +1,170 @@
+/* Redesign tokens - Premium Minimalist */
+:root {
+    --bg-color: #FAFAFA;
+    --text-color: #1A1A1A;
+    --accent-color: #C5A059; /* Sophisticated gold/bronze */
+    --surface: #FFFFFF;
+    --border-color: #E5E5E5;
+    --muted-color: #737373;
+    
+    /* Typography */
+    --font-heading: 'Inter', sans-serif; /* Cleaner, more modern */
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+}
+
+/* Auction Cards - Minimalist Premium */
+.auction-card {
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+}
+
+.auction-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.auction-image-wrapper {
+    aspect-ratio: 16/9;
+}
+
+.auction-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.auction-content {
+    padding: var(--spacing-md);
+}
+
+.auction-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.auction-status {
+    background: var(--text-color);
+    color: var(--surface);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Project Feature - Minimalist Premium */
+.project-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin-top: var(--spacing-xl);
+}
+
+.project-feature-media {
+    position: relative;
+    aspect-ratio: 4/3;
+}
+
+.project-feature-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-feature-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Premium Property Card */
+.property-card {
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 0; /* Minimalist */
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.property-card:hover {
+    border-color: var(--accent-color);
+}
+
+.property-card-image {
+    aspect-ratio: 4/3;
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+
+.property-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.property-card:hover .property-card-image img {
+    transform: scale(1.05);
+}
+
+.property-card-content {
+    padding: var(--spacing-sm);
+}
+
+/* Button refinement */
+.btn {
+    border-radius: 0;
+    padding: var(--spacing-xs) var(--spacing-md);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--text-color);
+}
+.btn-primary {
+    background: var(--text-color);
+    color: var(--surface);
+}
+.btn-outline {
+    background: transparent;
+    color: var(--text-color);
+}
+
+/* Footer - Premium Minimalist */
+.site-footer {
+    background: var(--text-color);
+    color: var(--surface);
+    padding: var(--spacing-xl) 0;
+}
+
+.footer-title {
+    color: var(--surface);
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links a {
+    color: var(--border-color);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    color: var(--muted-color);
+}

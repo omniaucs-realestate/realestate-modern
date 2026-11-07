@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اسم الشركة | الفخامة العقارية · المزادات والتطوير</title>
+    <meta name="description" content="نمنحك فرصًا استثمارية آمنة، ومشاريع تطويرية تلبي تطلعاتك السكنية والاستثمارية، بتجربة عقارية فاخرة.">
+
+    <meta property="og:title" content="اسم الشركة | الفخامة العقارية">
+    <meta property="og:description" content="نمنحك فرصًا استثمارية آمنة، ومشاريع تطويرية تلبي تطلعاتك السكنية والاستثمارية.">
+    <meta property="og:image" content="assets/images/editorial/hero-residence.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/images/editorial/hero-residence.jpg" as="image">
+    <link rel="preload" href="infath-fonts/RuaqArabic-Light.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/RuaqArabic-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/RuaqArabic-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/LamaSans-Regular.otf" as="font" type="font/otf" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=12">
+    <link rel="stylesheet" href="css/premium.css?v=1">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+    <!-- ============================ Header ============================ -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="اسم الشركة">
+                <span class="brand-mark"><img src="assets/logo/brand-mark.svg" alt=""></span>
+                <span class="brand-text">
+                    <span class="brand-name">اسم الشركة</span>
+                    <span class="brand-sub">Real Estate</span>
+                </span>
+            </a>
+
+            <nav class="nav-menu" id="mainNav" aria-label="القائمة الرئيسية">
+                <a href="index.html">الرئيسية</a>
+                <a href="auctions.html">المزادات</a>
+                <a href="projects.html">مشاريعنا</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-outline-light btn-header">تواصل معنا</a>
+                <button class="mobile-toggle" type="button" aria-label="فتح القائمة" aria-controls="mainNav" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================ Hero ============================ -->
+        <section class="hero-refined">
+            <div class="container">
+                <div class="hero-frame">
+                    <img class="hero-photo"
+                         src="assets/images/editorial/hero-residence.jpg"
+                         alt="فيلا معاصرة بإضاءة دافئة في مشروع سكني فاخر"
+                         width="2000" height="1333" fetchpriority="high" decoding="async">
+
+                    <div class="hero-content">
+                        <span class="eyebrow eyebrow-light">Luxury Real Estate · Riyadh</span>
+                        <h1 class="hero-title">
+                            نصنع مساحات<br>
+                            <span class="serif">تُشبه</span> أصحابها
+                        </h1>
+                        <p class="hero-desc">
+                            من المزادات العقارية الحصرية إلى مشاريع التطوير،
+                            نقدّم فرصًا مختارة بعناية وتجربة تليق بتطلعاتك.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="auctions.html" class="btn btn-cream">اكتشف الفرص <span class="arrow">←</span></a>
+                            <a href="#projects" class="btn btn-glass">استكشف المشاريع</a>
+                        </div>
+                    </div>
+
+                    <span class="hero-coordinates">24.7136° N · 46.6753° E</span>
+                    <span class="hero-scroll">Scroll<span></span></span>
+                </div>
+            </div>
+
+            <div class="hero-search-wrap">
+                <form class="search-dock" id="hero-search" action="auctions.html" method="get" role="search">
+                    <div class="search-field">
+                        <label for="hero-city">LOCATION</label>
+                        <select id="hero-city" name="city" aria-label="المدينة">
+                            <option value="all">جميع المدن</option>
+                            <option value="الرياض">الرياض</option>
+                            <option value="مكة">مكة</option>
+                            <option value="المنطقة الشرقية">المنطقة الشرقية</option>
+                        </select>
+                        <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="hero-type">PROPERTY TYPE</label>
+                        <select id="hero-type" name="type" aria-label="نوع الفرصة">
+                            <option value="all">كل الفرص</option>
+                            <option value="auction">مزاد عقاري</option>
+                            <option value="project">مشروع تطوير</option>
+                        </select>
+                        <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="hero-status">STATUS</label>
+                        <select id="hero-status" name="status" aria-label="حالة الفرصة">
+                            <option value="all">جميع الحالات</option>
+                            <option value="قريبًا">قريبًا</option>
+                            <option value="جاري">جاري</option>
+                            <option value="منتهي">منتهي</option>
+                        </select>
+                        <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    </div>
+
+                    <button class="search-submit" type="submit">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                        <span>ابحث</span>
+                    </button>
+                </form>
+
+                <div class="hero-chips">
+                    <a class="hero-chip" href="auctions.html"><i class="bi bi-hammer" aria-hidden="true"></i> مزادات قادمة</a>
+                    <a class="hero-chip" href="#projects"><i class="bi bi-buildings" aria-hidden="true"></i> مشاريع التطوير</a>
+                    <a class="hero-chip" href="contact.html"><i class="bi bi-chat-square-text" aria-hidden="true"></i> استشارة خاصة</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== Marquee ========================== -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span>مزادات عقارية</span><i></i>
+                    <span>تطوير نوعي</span><i></i>
+                    <span>استثمار</span><i></i>
+                    <span>استشارات خاصة</span><i></i>
+                    <span>Riyadh · Saudi Arabia</span><i></i>
+                    <span>مزادات عقارية</span><i></i>
+                    <span>تطوير نوعي</span><i></i>
+                    <span>استثمار</span><i></i>
+                    <span>استشارات خاصة</span><i></i>
+                    <span>Riyadh · Saudi Arabia</span><i></i>
+                </div>
+                <div class="marquee-group">
+                    <span>مزادات عقارية</span><i></i>
+                    <span>تطوير نوعي</span><i></i>
+                    <span>استثمار</span><i></i>
+                    <span>استشارات خاصة</span><i></i>
+                    <span>Riyadh · Saudi Arabia</span><i></i>
+                    <span>مزادات عقارية</span><i></i>
+                    <span>تطوير نوعي</span><i></i>
+                    <span>استثمار</span><i></i>
+                    <span>استشارات خاصة</span><i></i>
+                    <span>Riyadh · Saudi Arabia</span><i></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================ About =========================== -->
+        <section class="about-editorial" id="about">
+            <div class="container editorial-grid">
+                <div class="about-media" data-reveal="right">
+                    <div class="about-media-main">
+                        <img src="assets/images/editorial/interior-living.jpg"
+                             alt="مساحة معيشة معاصرة بتشطيبات خشبية دافئة"
+                             loading="lazy" decoding="async" width="1600" height="1067">
+                    </div>
+                    <div class="about-media-badge">
+                        <span class="badge-value">2026</span>
+                        <span class="badge-label">تأسست في الرياض برؤية عقارية معاصرة.</span>
+                    </div>
+                </div>
+
+                <div class="about-copy" data-reveal="left" data-delay="100">
+                    <span class="eyebrow">About the company</span>
+                    <h2 class="section-title">حيث تلتقي الخبرة العقارية<br><span class="serif">بفخامة</span> التفاصيل</h2>
+                    <p>
+                        نمزج بين الفهم العميق للسوق العقاري السعودي وأحدث الحلول الرقمية،
+                        لنقدم تجربة متكاملة تبدأ من دراسة الفرصة وتنتهي بقيمة تتجاوز التوقعات.
+                    </p>
+
+                    <ul class="numbered-list">
+                        <li><strong>01</strong><span>خبرة عملية في تسويق وإدارة الأصول والفرص العقارية.</span></li>
+                        <li><strong>02</strong><span>حلول رقمية دقيقة تصنع تجربة عقارية أكثر كفاءة.</span></li>
+                        <li><strong>03</strong><span>تركيز مطلق على أفضل قيمة للمالك والمستثمر والمشتري.</span></li>
+                    </ul>
+
+                    <a href="about.html" class="text-link">تعرّف على الشركة <span class="arrow">←</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Stats =========================== -->
+        <section class="stats-band--editorial">
+            <div class="container">
+                <div class="stats-head">
+                    <span class="eyebrow">By the numbers</span>
+                    <p>أرقام تعكس حجم الثقة، ودقة كل فرصة نديرها في السوق السعودي.</p>
+                </div>
+                <div class="stats-grid" id="stats-grid"></div>
+            </div>
+        </section>
+
+        <!-- =========================== Auctions ========================= -->
+        <section class="section auctions-section" id="auctions">
+            <div class="container">
+                <div class="split-head">
+                    <div class="section-head" data-reveal>
+                        <span class="eyebrow">Auction House</span>
+                        <h2 class="section-title">فرص <span class="serif">مختارة</span> بعناية</h2>
+                        <p class="section-lead">مزادات عقارية استثنائية، تُدار باحترافية وشفافية كاملة.</p>
+                    </div>
+                    <a href="auctions.html" class="text-link" data-reveal>عرض جميع المزادات <span class="arrow">←</span></a>
+                </div>
+
+                <div class="auctions-grid" id="featured-auctions-grid"></div>
+            </div>
+        </section>
+
+        <!-- =========================== Projects ========================= -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="split-head">
+                    <div class="section-head" data-reveal>
+                        <span class="eyebrow">Signature Development</span>
+                        <h2 class="section-title">مشاريع <span class="serif">مصممة</span> للحياة</h2>
+                        <p class="section-lead">مساحات تجمع بين جودة التصميم وقيمة الموقع وتجربة الحياة.</p>
+                    </div>
+                    <a href="projects.html" class="text-link" data-reveal>جميع المشاريع <span class="arrow">←</span></a>
+                </div>
+
+                <div id="featured-project-container"></div>
+            </div>
+        </section>
+
+        <!-- ============================ Services ========================= -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">What we do</span>
+                    <h2 class="section-title">خدمات <span class="serif">عقارية</span> متكاملة</h2>
+                    <p class="section-lead">من الفرصة الأولى إلى تسليم المفتاح، نرافقك في كل خطوة.</p>
+                </div>
+
+                <div class="service-list">
+                    <a class="service-row" href="auctions.html" data-reveal>
+                        <span class="service-num">01</span>
+                        <span class="service-thumb"><img src="assets/images/auctions/netaq-alsharkia/main.png" alt="" loading="lazy"></span>
+                        <h3>المزادات العقارية</h3>
+                        <p>منصات مزايدة إلكترونية شفافة، وفرص مختارة تُدار بخبرة من التقييم حتى الإغلاق.</p>
+                        <span class="service-arrow"><i class="bi bi-arrow-up-left" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a class="service-row" href="projects.html" data-reveal>
+                        <span class="service-num">02</span>
+                        <span class="service-thumb"><img src="assets/images/development/aqaronaresidence1/hero.jpg" alt="" loading="lazy"></span>
+                        <h3>التطوير العقاري</h3>
+                        <p>مشاريع سكنية نوعية تجمع بين التصميم الذكي، جودة التنفيذ، وقيمة الموقع.</p>
+                        <span class="service-arrow"><i class="bi bi-arrow-up-left" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a class="service-row" href="contact.html" data-reveal>
+                        <span class="service-num">03</span>
+                        <span class="service-thumb"><img src="assets/images/editorial/interior-dining.jpg" alt="" loading="lazy"></span>
+                        <h3>الاستشارات وإدارة الأصول</h3>
+                        <p>قراءة دقيقة للسوق، وتخطيط استثماري يحفظ القيمة ويضاعف أثر الأصل العقاري.</p>
+                        <span class="service-arrow"><i class="bi bi-arrow-up-left" aria-hidden="true"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= Quote =========================== -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-panel" data-reveal="zoom">
+                    <img src="assets/images/editorial/interior-dining.jpg" alt="" loading="lazy" decoding="async">
+                    <blockquote>
+                        <span class="eyebrow eyebrow-light">Our philosophy</span>
+                        <p>«الفخامة ليست في الترف، بل في دقة التفاصيل وصدق النتائج.»</p>
+                        <cite>اسم الشركة — Riyadh, Saudi Arabia</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= CTA ============================ -->
+        <section class="cta">
+            <div class="container cta-inner cta-inner--split" data-reveal>
+                <div>
+                    <span class="eyebrow eyebrow-light">Private Consultation</span>
+                    <h2>هل لديك أصل عقاري<br>أو <span class="serif">فرصة</span> استثمارية؟</h2>
+                    <p>دعنا نساعدك على الوصول إلى السوق بالطريقة الصحيحة، وبمعايير فاخرة تليق بأصلك.</p>
+                </div>
+                <div class="cta-side">
+                    <div class="cta-btns">
+                        <a href="contact.html" class="btn btn-gold">تواصل معنا <span class="arrow">←</span></a>
+                        <a href="auctions.html" class="btn btn-outline-light">استكشف المزادات</a>
+                    </div>
+                    <span class="cta-contact">
+                        <a href="tel:+966920000000" dir="ltr">+966 92 000 0000</a> · RIYADH
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================ Footer ============================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html" aria-label="اسم الشركة">
+                        <span class="brand-mark"><img src="assets/logo/brand-mark.svg" alt=""></span>
+                        <span class="brand-text">
+                            <span class="brand-name">اسم الشركة</span>
+                            <span class="brand-sub">Real Estate</span>
+                        </span>
+                    </a>
+                    <p>
+                        نحوّل الفرص العقارية إلى قيمة، بخبرة سعودية وتقنيات حديثة،
+                        وبمعايير فخامة تليق بتطلعاتك.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="auctions.html">المزادات</a></li>
+                        <li><a href="projects.html">مشاريعنا</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="auctions.html">المزادات العقارية</a></li>
+                        <li><a href="projects.html">التطوير العقاري</a></li>
+                        <li><a href="contact.html">الاستشارات الاستثمارية</a></li>
+                        <li><a href="contact.html">إدارة الأصول</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                        <li><i class="bi bi-telephone"></i><a href="tel:+966920000000" dir="ltr">+966 92 000 0000</a></li>
+                        <li><i class="bi bi-envelope"></i><a href="mailto:info@company.sa">info@company.sa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 اسم الشركة. جميع الحقوق محفوظة.</span>
+                <span class="latin">Designed for extraordinary living</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js?v=12"></script>
+    <script src="js/main.js?v=12"></script>
+    <script src="js/premium.js?v=1"></script>
+</body>
+</html>

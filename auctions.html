@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>المزادات العقارية | اسم الشركة</title>
+    <meta name="description" content="اكتشف الفرص العقارية القادمة وشارك في مزادات اسم الشركة. فرص عقارية استثنائية تُدار باحترافية في السوق السعودي.">
+
+    <meta property="og:title" content="المزادات العقارية | اسم الشركة">
+    <meta property="og:description" content="فرص عقارية استثنائية تُدار باحترافية في السوق السعودي.">
+    <meta property="og:image" content="assets/images/auctions/estithmar-mecca/main.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="infath-fonts/RuaqArabic-Light.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/RuaqArabic-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/RuaqArabic-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="infath-fonts/LamaSans-Regular.otf" as="font" type="font/otf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="css/premium.css?v=1">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+    <!-- ============================ Header ============================ -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="اسم الشركة">
+                <span class="brand-mark"><img src="assets/logo/brand-mark.svg" alt=""></span>
+                <span class="brand-text">
+                    <span class="brand-name">اسم الشركة</span>
+                    <span class="brand-sub">Real Estate</span>
+                </span>
+            </a>
+
+            <nav class="nav-menu" id="mainNav" aria-label="القائمة الرئيسية">
+                <a href="index.html">الرئيسية</a>
+                <a href="auctions.html">المزادات</a>
+                <a href="projects.html">مشاريعنا</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-outline-light btn-header">تواصل معنا</a>
+                <button class="mobile-toggle" type="button" aria-label="فتح القائمة" aria-controls="mainNav" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================ Hero ============================ -->
+        <section class="page-hero page-hero--auction">
+            <div class="page-hero-bg" style="background-image: url('assets/images/auctions/netaq-alsharkia/main.png');"></div>
+            <div class="container page-hero-inner">
+                <div class="auction-logo auction-logo--light">
+                    <img src="assets/logo/auc.svg" alt="شعار المزاد" width="46" height="58">
+                </div>
+                <span class="eyebrow eyebrow-light">Auction House</span>
+                <h1 class="page-hero-title">المزادات العقارية</h1>
+                <p>فرص عقارية استثنائية، مختارة بعناية، تُدار باحترافية وشفافية كاملة.</p>
+                <div class="page-hero-meta">
+                    <span><i class="bi bi-geo-alt"></i> المملكة العربية السعودية</span>
+                    <span class="latin" id="hero-auctions-count">Live Auctions</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== Filters ========================== -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filters-head">
+                    <span class="filter-label">Filter Auctions</span>
+                    <span class="results-count" id="results-count"></span>
+                </div>
+
+                <div class="filters-top" id="status-filters">
+                    <button class="filter-btn active" type="button" data-status="all">الكل</button>
+                </div>
+
+                <div class="filters-bottom">
+                    <input type="text" id="search-input" class="filter-input" placeholder="ابحث عن مزاد أو عقار...">
+                    <select id="city-filter" class="filter-select" aria-label="تصفية حسب المدينة">
+                        <option value="all">جميع المدن</option>
+                    </select>
+                    <select id="type-filter" class="filter-select" aria-label="تصفية حسب النوع">
+                        <option value="all">جميع الأنواع</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== Grid ============================= -->
+        <section class="auctions-page-wrapper">
+            <div class="auctions-grid" id="auctions-page-grid"></div>
+        </section>
+    </main>
+
+    <!-- ============================ Footer ============================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html" aria-label="اسم الشركة">
+                        <span class="brand-mark"><img src="assets/logo/brand-mark.svg" alt=""></span>
+                        <span class="brand-text">
+                            <span class="brand-name">اسم الشركة</span>
+                            <span class="brand-sub">Real Estate</span>
+                        </span>
+                    </a>
+                    <p>نحوّل الفرص العقارية إلى قيمة، بخبرة سعودية وتقنيات حديثة، وبمعايير فخامة تليق بتطلعاتك.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="auctions.html">المزادات</a></li>
+                        <li><a href="projects.html">مشاريعنا</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="auctions.html">المزادات العقارية</a></li>
+                        <li><a href="projects.html">التطوير العقاري</a></li>
+                        <li><a href="contact.html">الاستشارات الاستثمارية</a></li>
+                        <li><a href="contact.html">إدارة الأصول</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                        <li><i class="bi bi-telephone"></i><a href="tel:+966920000000" dir="ltr">+966 92 000 0000</a></li>
+                        <li><i class="bi bi-envelope"></i><a href="mailto:info@company.sa">info@company.sa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 اسم الشركة. جميع الحقوق محفوظة.</span>
+                <span class="latin">Designed for extraordinary living</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js?v=10"></script>
+    <script src="js/main.js?v=10"></script>
+    <script src="js/premium.js?v=1"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('auctions-page-grid');
+            const searchInput = document.getElementById('search-input');
+            const cityFilter = document.getElementById('city-filter');
+            const typeFilter = document.getElementById('type-filter');
+            const statusFiltersContainer = document.getElementById('status-filters');
+            const resultsCount = document.getElementById('results-count');
+
+            if (typeof auctionsData === 'undefined') {
+                grid.innerHTML = '<div class="no-results">جاري تحميل البيانات...</div>';
+                return;
+            }
+
+            // 1) Auto status based on current date (shared helper from data.js)
+            auctionsData.forEach((auction) => {
+                auction.status = computeAuctionStatus(auction);
+            });
+
+            // 2) Dynamic filter buttons
+            const uniqueStatuses = [...new Set(auctionsData.map((auction) => auction.status))];
+            uniqueStatuses.forEach((status) => {
+                if (!status) return;
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.type = 'button';
+                btn.setAttribute('data-status', status);
+                btn.textContent = status;
+                statusFiltersContainer.appendChild(btn);
+            });
+
+            // 3) Dynamic cities
+            [...new Set(auctionsData.map((auction) => auction.location))].forEach((city) => {
+                const option = document.createElement('option');
+                option.value = city;
+                option.textContent = city;
+                cityFilter.appendChild(option);
+            });
+
+            // 4) Dynamic types
+            [...new Set(auctionsData.map((auction) => auction.type))].forEach((type) => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                typeFilter.appendChild(option);
+            });
+
+            // 5) Render
+            function renderAuctions(data) {
+                grid.innerHTML = '';
+
+                if (resultsCount) {
+                    resultsCount.innerHTML = `<strong>${data.length}</strong> مزاد`;
+                }
+
+                if (data.length === 0) {
+                    grid.innerHTML = '<div class="no-results">لم نتمكن من العثور على مزادات تطابق بحثك.</div>';
+                    return;
+                }
+
+                data.forEach((auction, index) => {
+                    grid.insertAdjacentHTML('beforeend', auctionCardHTML(auction, index));
+                });
+
+                window.observeReveals?.();
+            }
+
+            // 6) Filtering
+            function applyFilters() {
+                const activeBtn = document.querySelector('.filter-btn.active');
+                if (!activeBtn) return;
+
+                const activeStatus = activeBtn.getAttribute('data-status');
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                const selectedCity = cityFilter.value;
+                const selectedType = typeFilter.value;
+
+                const filteredData = auctionsData.filter((auction) => {
+                    const matchStatus = activeStatus === 'all' || auction.status === activeStatus;
+                    const matchSearch = !searchTerm
+                        || auction.title.toLowerCase().includes(searchTerm)
+                        || auction.location.toLowerCase().includes(searchTerm);
+                    const matchCity = selectedCity === 'all' || auction.location === selectedCity;
+                    const matchType = selectedType === 'all' || auction.type === selectedType;
+
+                    return matchStatus && matchSearch && matchCity && matchType;
+                });
+
+                renderAuctions(filteredData);
+            }
+
+            // 7) Event listeners
+            document.querySelectorAll('.filter-btn').forEach((btn) => {
+                btn.addEventListener('click', (event) => {
+                    document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+                    event.currentTarget.classList.add('active');
+                    applyFilters();
+                });
+            });
+
+            searchInput.addEventListener('input', applyFilters);
+            cityFilter.addEventListener('change', applyFilters);
+            typeFilter.addEventListener('change', applyFilters);
+
+            // 8) Initial render
+            renderAuctions(auctionsData);
+
+            const heroCount = document.getElementById('hero-auctions-count');
+            if (heroCount) {
+                const activeCount = auctionsData.filter((a) => a.status === 'جاري').length;
+                heroCount.textContent = activeCount === 0
+                    ? 'Auction Collection'
+                    : `${activeCount} Live Auction${activeCount === 1 ? '' : 's'}`;
+            }
+        });
+    </script>
+</body>
+</html>
